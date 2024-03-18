@@ -1,0 +1,193 @@
+<html>
+<head> 
+<title> Mybook</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+<body bgcolor="white">
+    <p>
+    	<p><h1 style="color: black;  text-align: center; font-family:Elephant; font-weight: bold;">customer feedback management system</h1></p>
+    
+    <a href="home.html" style="padding: 10px; color: white; background-color:skyblue; text-decoration: none; margin-right: 15px;">HOME</a>
+    <a href="about us.html" style="padding: 10px; color: white; background-color:skyblue; text-decoration: none; margin-right: 15px;">ABOUT US</a>
+    <a href="contact us.html" style="padding: 10px; color: white; background-color:skyblue; text-decoration: none; margin-right: 15px;">CONTACT</a>
+    <a href="service.html" style="padding: 10px; color: white; background-color:skyblue; text-decoration: none; margin-right: 15px;">SERVICES</a>
+    <a href="form.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">FORM</a>
+    <a href="table.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">TABLE</a>
+    <a href="mybook.html" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">MY BOOK
+    </a><br><br>
+    <hr>
+    <br>
+
+	</p>
+	<h1>DATABASE AND JAVA WITH Store MANAGEMENT SYSTEM</h1>
+	<ol><h2><u><li>DATABASE</li></u></h2>
+		<p>Database name used: <b>customer_feedback_management_system.</b></p>
+		<ul type="square"><h3><u><i><li>Tables</li></i></u></h3>
+
+			<ol><li><b>Registration Table</b></li>
+
+			<p>Registration form is a form which is help user of a system to create account that can help allow to access of a system 
+			This is an entity which is help to get feedback business needed,this is one of use systems there are registrater and login to be access in the system.</p></br>
+
+			<li><b>manager Table</b></li>
+
+			<p> Manager table has a role in the effective management of customer feedback within an organization. It enables managers to monitor, analyze, prioritize, respond to, and learn from customer feedback,  driving continuous improvement and enhancing customer experience.
+			Manager are in charger of all activities in the system he/she had username,email,password and Role .</p> </br>
+
+
+			<li><b>feedback Table</b></li>
+
+			<p>The feedback form provides a structured way for customers to share their opinions, experiences, and suggestions regarding the products or services offered by the organization. It serves as a direct channel for customers to communicate their feedback to the organization.
+			</p></br>
+
+			<li><b> attachments Table</b></li>
+
+			<p>. Attachments table It empowers customers to provide detailed feedback and supporting evidence, which can lead to more effective problem-solving and continuous improvement efforts within the organization. when you want to add attach documents on your respont may use this table.which is include file_name,file_size,file_types,date uploaded</p></br>
+
+            <li><b>services Table</b></li>
+
+			<p>The services form in a customer feedback management system is essential for organizing, routing, analyzing, and acting upon feedback related to the organization's various services or products. It supports data-driven decision-making, enhances customer satisfaction.which include type of service,availability,date,duration.</p></br>
+
+
+			              <h3><u><i><li>Attributes</li></i></u></h3>
+			       <ol type="a"><li><b>Attributes of Regisration Table</b></li></br>
+    Here are the descriptions or purposes of the attributes/columns used in Registration table:</br>
+
+    <ol type="i"><li><p><b><i>Name:</i></b> The columns which are represents names of user.</br></p></li> 
+    	<li><p><b><i>customer_id:</i></b> The column which are represents id_number of user.</br></p></li>
+
+
+    <li><p><b><i>country:</i></b> The column which are represents country of user.</br></p></li>
+
+    <li><p><b><i>gender:</i></b> The column which are represents or store gender of user like female and male.</br></p></li>
+
+    <li><p><b><i>district:</i></b> The column which are represents  location of user.</br></p></li> 
+
+    <li><p><b><i>age:</i></b> The column which are represents age of user.</br></p></li>
+
+   <li><p><b><i>Email:</i></b> The column which are represents Email of given user.</br></p></li>
+
+    <li><p><b><i>Password:</i></b> The column which are represents  password of the user.</br></p></li></ol>
+
+
+                    <li><b>Attributes of manager Table</b></li></br>
+
+    Here are the descriptions or purposes of the attributes/columns used in manager table:</br>
+
+
+<ol type="i"><li><p><b><i>Product_Id:</i></b> The column which are represents  manger_id of manager table which is unique value called PRIMARY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of manager table.</br></p></li>
+
+<li><p><b><i>username:</i></b> The column which are represents  the name of the manager of our business.</p></br></li>
+
+<li><p><b><i>password_hash:</i></b> The column which are represents  the secure number/character of manager in our business department.</br></p></li>
+
+<li><p><b><i>Email:</i></b> The columns which are represents  contact of manager.</br></p></li></ol>
+<li><p><b><i>role:</i></b> The columns which are represents  the what manager can do in business department.</br></p></li></ol>
+
+
+
+<li><b>Attributes of feedback Table</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in feedback table:</br>
+
+
+
+<ol type="i"><li><p><b><i>feedback_Id:</i></b> The column which are represents  id of  Store which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of feedback table.</p></br></li>
+
+
+<li><p><b><i>reply:</i></b> The column which are represents  the place where customer can text when he/she want to send feedback on the service/product.</p></br></li>
+
+<li><p><b><i>feedback_text:</i></b> The column which are Description anything customer need to talk  about the service/product.</p></br></li>
+
+
+<li><p><b><i>replymanager:</i></b> The column which are represents place where manager he/she respond customer about his/her feedback.</p></br></li>
+
+
+
+                    <li><b>Attributes of services Table</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in services table:</br>
+
+<ol type="i"><li><p><b><i>service_Id:</i></b> The column which are represents  id of Transaction  which is unique value called PRIMARY KEY.  It is set to auto-increment (AUTO_INCREMENT).</br>
+AUTO_INCREMENT means that the database will automatically generate a unique ID for each new record, typically incrementing the previous value of services table.</p></br></li>
+
+
+<li><p><b><i>date:</i></b> The column which are represents  date we serve a customer.</p></br></li> 
+
+<li><p><b><i>duration:</i></b> The column which are represents the time we are serving a service.</p></br></li>
+
+<li><p><b><i>type_of_service:</i></b> The column which are represents  what services we serve in our organization .</p></br></li>
+<li><p><b><i>availability:</i></b> The column which are represents the product we have in the business.</p></br></li></ol>
+
+
+                    <li><b>Attributes of attachments Table</b></li></br>
+
+                    Here are the descriptions or purposes of the attributes/columns used in attachments table:</br>
+
+
+<ol type="i"><li><p><b><i>attachments_Id:</i></b> The column which are represents  id of  user which is unique value called PRIMARY KEY. It is set to auto-increment (AUTO_INCREMENT).</br>
+
+<li><p><b><i>file_name:</i></b> The column which are represents  the name of file we attach to the documents.</p></br></li>
+
+
+<li><p><b>file_type:</i></b> The column which are represents  types of file we attach on document .</p></br></li>
+
+<li><p><b><i>file size :</i></b> The column which are represents memory storage of file.</p></br></li>
+
+<li><p><b><i>date uplouded:</i></b> The column which are represents the whether /time we attach a file .</p></br></li></ol> 
+
+ 
+
+
+
+        </ul>
+		<h2><u><li>JAVA PROGRAMMING</li></u></h2>
+		
+		<ul type="square"><h3><u><i><li>Description</li></i></u></h3>
+
+			  <b>Introduction</b><br>
+ <p>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming ttlanguage.
+ Any hardware or software environment in which a program runs, is known as a platform.
+ Since Java has a runtime environment (JRE) and API, it is called a platform. 
+Actually java programming help in system to run our system use programming language
+.</p><br>
+ 
+	<b>Tools used to develop this system in java programming</b><br>
+
+<ol type="a"><li><p><b>Eclipse IDE:</b> is an integrated development environment (IDE) primarily used for Java development, but it supports various programming languages through plug-ins. It provides a comprehensive set of tools for software developers to write, test, and debug their code efficiently.. </p><br></li>
+
+<li><p><b>MySQL Connector/J:</b>  This connector provides connectivity for Java applications. It is a JDBC (Java Database Connectivity) driver that allows Java applications to interact with MySQL databases using standard JDBC API calls. . </p><br></li></ol>
+
+
+
+
+
+			              <h3><u><i><li>Forms and Images</li></i></u></h3>
+
+<ol type="I"><li><b><h4>registration Form</h4></b></br>
+<img src="registration imange.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>manager Form</h4></b></br>
+<img src="manager image.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>feedback Form</h4></b></br>
+<img src="feedback image.png" width=900 height=300><br><br><br><br><br></li>
+
+<li><b><h4>services Form</h4></b></br>
+<img src="services image.png" width=900 height=300><br><br><br><br><br>
+
+<li><b><h4>attachments Form</h4></b></br>
+<img src="attachments image.png" width=900 height=300><br><br><br><br><br>
+</li></ol>
+
+</ul>
+		
+	</ol>
+	<p style="margin-top: 150px; color: black;text-align: center;"><marquee>Designed by Non goverment organization Editer Nishimwe Aline &copycopyright 2024</marquee></p>
+	</body>
+	</html>
